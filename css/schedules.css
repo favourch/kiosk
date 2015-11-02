@@ -1,0 +1,65 @@
+/* styleshee for faculty schedule */
+
+#panel{
+	width: 90%;
+	margin: 0 auto; 
+	border: 1px solid #dadada; 
+	border-radius: 4px; 
+	height:100%; 
+	background-color:#fafafa;
+}
+.panel-body{
+    height: 100%;
+    overflow-y: auto;
+}
+
+#right_pane{
+	width: 100%;
+	height:95%;
+	float: right;
+	padding: 10px 20px;
+}
+
+#left_pane{
+	/*
+	border:1px solid #DADADA; 
+	height:100%; 
+	*/
+	width:100%;
+}
+.picture{
+	width: 50%;
+	padding: 20px; 
+	border-radius:100%;
+	float: left;
+}
+#details{
+	float:left;
+}
+
+#expand-button{
+	display:none;
+}
+@media(min-width: 768px){
+	#right_pane{
+		width: 80%;
+		height:100%;
+		float: right;
+		padding: 10px;
+	}
+
+	#left_pane{
+		border-right:1px solid #DADADA; 
+		height:100%; 
+		width:20%;
+	}
+	.picture{
+		width: 100%;
+		padding: 20px; 
+		border-radius:100%;
+		float:;
+	}
+	#expand-button{
+		display:block
+	}
+}

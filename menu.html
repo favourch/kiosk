@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>BU Kiosk</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/ours.css" rel="stylesheet">
+    <link href="css/custom-theme.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <style type="text/css">
+        .box-shortcut{
+            width:170px;
+            height:170px;
+            padding:10px;
+            margin-left:5px;
+            margin-right:0px;
+            margin-top:0px;
+            margin-bottom:5px;
+            /*margin:5px;*/
+            display:inline-flex;
+            transition:box-shadow 0.5s ease;
+        }
+        .box-shortcut:hover{
+            box-shadow: inset 0 -50px 100px -20px rgba(73, 73, 73, 0.34);
+
+        }
+        .box-shortcut>a{
+            text-align:center;
+            width:100%;
+            margin-top:20px; 
+            color:white;
+
+        }
+        .box-shortcut>a>span{
+            font-size: 50px;
+            display:block;
+            margin-bottom:25px;
+        }
+    </style>
+
+</head><!--/head-->
+<body style="padding-top:10px;">
+    <header id="header" class="navbar navbar-inverse navbar-fixed-top wet-asphalt hidden" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li class="active"><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <i class="icon-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="career.html">Career</a></li>
+                            <li><a href="blog-item.html">Blog Single</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="registration.html">Registration</a></li>
+                            <li class="divider"></li>
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li> 
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header><!--/header-->
+    <section id="viewport" class="animated " >
+        <div id="menu" class="menu">
+            <div class="col-lg-12">
+                <div class="container">        
+                    <a href="#" class="menu-toggle" style="font-size:40px; position:absolute;z-index:100;">
+                        <i class="icon-circle-arrow-up"></i>
+                    </a>
+                        
+                </div><!--/.container-->
+
+                <div class="">
+                    <div class="col-md-12">
+                        <div class="center gap">
+                            <h2>Welcome to Bicol University Kiosk System</h2>
+                            <p>This is to aid you with information you need with ease ease esase and updated data complex.</p>
+                        </div>                
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="menu-item">
+                        <div class="media" onclick="select_option(1)">
+                            <div class="pull-left">
+                                <i class="icon-columns icon-md"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">E - Bulletin</h3>
+                                <p>View the latest announcements and updates here. Scientia Bullein, CSC Bulletin, CS/IT Department Bulletin, etc..</p>
+                            </div>
+                        </div>
+                    </div><!--/.menu-item-->
+                    <div class="menu-item">
+                        <div class="media" onclick="select_option(2)">
+                            <div class="pull-left">
+                                <i class="icon-map-marker icon-md"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">BU Digital Map</h3>
+                                <p>Find your classroom, locate your teacher, or simply just look for places to go within BU main campus.</p>
+                            </div>
+                        </div>
+                    </div><!--/.menu-item-->
+                    <div class="menu-item">
+                        <div class="media" onclick="select_option(3)">
+                            <div class="pull-left">
+                                <i class="icon-info icon-md"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Office Information</h3>
+                                <p>Having trouble with our services? Visit the office information o see what your looking for. We provide the procedures to choo choo.</p>
+                            </div>
+                        </div>
+                    </div><!--/.menu-item-->
+                </div><!--/.row-->
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+
+                        <div class="media" onclick="select_option(4)">
+                            <div class="pull-left">
+                                <i class="icon-user icon-md"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Faculty Info</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="media" onclick="select_option(5)">
+                            <div class="pull-left">
+                                <i class="icon-sitemap icon-md"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Organizations and Offices</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="media" onclick="select_option(6)">
+                            <div class="pull-left">
+                                <i class="icon-edit icon-md"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Registration Information</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
+                <div class="gap">
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="media" onclick="select_option(7)">
+                            <div class="pull-left">
+                                <i class="icon-bar-chart icon-md"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Student Grades</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="media" onclick="select_option(8)">
+                            <div class="pull-left">
+                                <i class="icon-calendar icon-md"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Student Schedule</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="media" onclick="select_option(9)">
+                            <div class="pull-left">
+                                <i class="icon-tags icon-md"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Student Payment Info.</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
+                <div class="gap">
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="media" onclick="select_option(10)">
+                            <div class="pull-left">
+                                <i class="icon-calendar icon-md"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Calendar of Activities</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="media" onclick="select_option(11)">
+                            <div class="pull-left">
+                                <i class="icon-calendar icon-md"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Room Vacancy</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="media" onclick="select_option(12)">
+                            <div class="pull-left">
+                                <i class="icon-tags icon-md"></i>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Another Feature</h3>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div><!--/.col-md-4-->
+                </div><!--/.row-->
+                <hr>
+
+
+            </div><!--/.col-->
+        </div><!--/#menu-->
+        <div id="main" class="main show-main " style="100%"> <!--.col-lg-12-->
+            <div class="container-fluid"> <!-.col-lg-12-->
+                <div class="container">
+                    
+                    <a href="#" class="menu-toggle" style="font-size:40px; position:absolute;z-index:100;">
+                        <i class="icon-circle-arrow-down"></i>
+                    </a>
+                    
+                </div>
+                <div class="center">
+                    <h2>Bicol University</h2>
+                    <p></p>
+                </div>
+                <div class="gap"></div>
+                <div class="container-fluid centered"> <!--.container-->
+                    <div class="col-md-6" style="width:60%;">
+                        <h1>Bicol University Kiosk</h1>
+                        <p>Welcome to the Bicol University Kiosk! This system will aid you with etc. etc where you can try to be a get ready set go in the highest. Bicol Universit commits to continually strive for xcellence in instruction, research and extension, in meeting the highest clientele satisfaction and adhering to quality standards. Bicol university college of arts and letters, Bicol University College of Science, Bicol University College of Business Enterprenuer and Management, Bicol University College of Social Sciences and Philosophy.</p>
+                    </div>
+                    <div class="apps-panel" style="">
+                        <div class="box-shortcut" style="background-color:#2d89ef">
+                            <a href="faculty-search.php" style="">
+                            <span class="icon-user" ></span>
+
+                            <h4>Faculty Schedule</h4>
+                            </a>
+                        </div>
+                        <div class="box-shortcut" style="background-color:#7e3878">
+                            <a href="student-verification.php" style="">
+                            <span class="icon-book" ></span>
+
+                            <h4>Student Info.</h4>
+                            </a>
+                        </div>
+                        <div class="box-shortcut" style="background-color:#ee1111">
+                            <a href="map.html" style="">
+                            <span class="icon-map-marker" ></span>
+
+                            <h4>Locator Map</h4>
+                            </a>
+                        </div>
+                        <div class="box-shortcut" style="background-color:#2b5797">
+                            <a href="office-search.php" style="">
+                            <span class="icon-coffee" ></span>
+
+                            <h4>Office Info.</h4>
+                            </a>
+                        </div>
+                        <div class="box-shortcut" style="background-color:#7e3878">
+                            <a href="calendar-of-activities.php" style="">
+                            <span class="icon-calendar" ></span>
+
+                            <h4>Activities</h4>
+                            </a>
+                        </div>
+                        <div class="box-shortcut" style="background-color:#2d89ef">
+                            <a href="e-bulletin.html" style="">
+                            <span class="icon-info" ></span>
+
+                            <h4>Bulletin</h4>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div><!--/#main-->
+    </section><!--/#services-->
+
+    <footer id="footer" class="midnight-blue hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a id="gototop" class="gototop" href="#"><i class="icon-chevron-up"></i></a></li><!--#gototop-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+
+    <script src="js/jquery.js"></script>
+    <script>
+        function select_option(option_no){
+
+        	if(option_no == 2){
+	        	window.location = "map.html";
+	        }
+            else if(option_no == 3){
+                window.location = "office-info.php";
+            }
+            else if(option_no == 5){
+                window.location = "office-search.php";
+            }
+        	else if(option_no >= 6 && option_no <= 9){
+	        	window.location = "student-verification.php";
+	        }
+            else if(option_no == 10){
+                window.location = "calendar-of-activities.php";
+            }
+
+	        else{
+	        	window.location = "faculty-search.php";
+	        }
+        }
+    </script>
+    <script>
+        (function(){
+            var main = $("#main"); 
+            var menu = $("#menu");
+            var main_content = $(".main .content");
+            $(".menu-toggle").bind("click", function(){
+                console.log("menu toggle working.");
+                menu.toggleClass("show-menu");
+                main.toggleClass("show-main");
+            });
+
+        })();
+        function hide(){
+            var main = $("#main");
+            main.toggleClass("hidden");
+        }
+        function alert_this(){
+            console.log("here you go.");
+            alert("this");
+        }
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

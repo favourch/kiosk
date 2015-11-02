@@ -1,0 +1,2 @@
+ErrorDocument 404 /projects/kiosk/kiosk404.php
+RewriteOptions inherit

@@ -1,0 +1,313 @@
+html, body{
+
+	/* disable text selection 
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: moz-none;
+	-ms-user-select :none;
+	user-select:none;
+    /**/
+	height: 100%;
+}
+
+body{
+	padding-top:54px;
+}
+
+#banner{
+    padding:0; 
+    background-color:#9B59B6;
+}
+
+#header .hidden{
+	position:fixed;
+	top:-80px; /*0px;*/
+}
+#footer .hidden{
+	position:fixed;
+	width:100%;
+	bottom:-90px; /*0px;*/
+}
+.menu{
+	top:-100%;
+	position:fixed;
+	transition:top 1s ease;
+}
+
+.show-menu{
+	top:0px;
+}
+
+.main{
+	top:100%;
+	position: fixed;
+	transition:top 1s ease;
+}
+.show-main{
+	top:0px;
+}
+
+/*
+body{
+	padding-top: 10px;
+}
+
+body > section{
+	padding:0;
+}*/
+#panel{
+    width: 60%; 
+    margin-left: 270px;
+    border: 1px solid #dadada; 
+    border-radius: 4px; 
+    /*height: 500px;*/
+}
+
+.panel-default > .panel-heading{
+    /*font-size:25px;
+    background-color: #3498db;
+    color:#FFF;
+    */
+    font-size: 17px;
+    background-color: #3498db;
+    color: #FFF;
+    line-height: 17px;
+    padding: 10px;
+}
+
+a.nav-tabs.nav-justified>.active>a, .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+    /*background-color: #3498db;
+    color:#FFF;
+    border-bottom:1px solid #3498db;*/
+    border:0;
+    background-color:#fafafa;
+
+}
+
+/* OLD Design */
+.nav-tabs>li>a{
+    border-radius: 5px 0 0 5px;
+    margin:5px 0 5px 5px;
+    color:#FFF;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+
+
+}
+.nav-tabs{
+    box-shadow: 0px 5px 30px -20px;
+
+}
+
+.nav-tabs>li{
+    border-bottom:4px solid #fafafa;
+    transition:border-bottom 800ms ease;
+}
+.nav-tabs>li:hover{
+    border-bottom:5px solid #FF8839;
+}
+.nav-tabs li.active{
+    border:0;
+    border-bottom:5px inset #3498db;
+}
+.nav-tabs>li>a{
+    border-radius: 0;
+    margin:0;
+    color:#333;
+    text-align: center;
+    font-size: initial;
+    font-weight: 500;
+    padding:15px;
+    border:0;
+
+}
+.nav-tabs>li>a:hover{
+    color:#000;
+    border:0;
+
+    background-color:transparent;
+
+}
+.nav-tabs>li>a>.icon{
+    margin-right: 5px;
+    font-size: 20px;
+}
+/*  Tabs design  */
+
+.search-item-box{
+    overflow:hidden;
+    width: 33%;
+    display: inline-block;
+    height: 150px;
+    border: 1px solid #dadada;
+    text-align:center;
+    background-color:#fff;
+    box-shadow: 0 0px 5px #C9C9C9;
+    animation: fadeInDown;
+    -webkit-animation: fadeInDown;
+}
+.search-item-box > a {
+    padding:30px;
+    text-align: right;
+}
+.search-item-box > a > section{
+    font-size: 18px;
+    font-weight: bold;
+}
+.search-item-box > a > p{
+    font-size: 14px;
+}
+
+
+
+
+
+/* Admin menu panel design */
+
+#left-panel{
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background-color: #fff;
+    left:-250px;
+    z-index: 3;
+    box-shadow:rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+    transition: left 0.5s ease-in;
+}
+
+#left-panel.show{
+    left:0;
+}
+
+
+
+.panel-menu-item{
+    display: block;
+    color:black;
+    padding-left:30px;
+    padding-top:13px;
+    padding-bottom:12px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    height: auto;
+    line-height: 23px;
+    outline-color: rgb(255, 255, 255);
+}
+
+#left-panel > .panel-menu-item.active{
+    background-color: #ddd;
+}
+
+#left-panel > .panel-menu-item:not(.active):hover{
+    background-color: #eee;
+}
+#left-panel > ul.panel-collapse-menu >li a{
+    list-style: none;
+    padding:5px;
+    padding-left: 50px;
+    display: block;
+    color:#000;
+
+}
+#left-panel > ul.panel-collapse-menu >li a.active{
+    background-color: #ddd;
+}
+#left-panel > ul.panel-collapse-menu >li a span{
+    margin:10px;
+    width:20px;
+    display: inline-block;
+}
+#left-panel > ul.panel-collapse-menu >li a:hover{
+    background-color: #eee;
+
+}
+#left-panel > ul.panel-collapse-menu{
+    margin:0;
+    padding:0;
+}
+
+
+.menu-toggle > .glyphicon{
+    margin-right:10px;
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    padding: 5px;
+    float: left;
+    position: relative;
+    top: -3px;
+    border-radius: 3px;
+}
+
+.menu-toggle:hover{
+    text-shadow:0 0 5px white;
+}
+.menu-toggle > .glyphicon:hover{
+    box-shadow: 0 0 5px white;
+}
+
+.sem-header{
+    display: inline;
+    margin-left: 70px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+/** Admin Datatables design*/
+table.dataTable tbody th, table.dataTable tbody td{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+/** GENERAL ANIMATION  */
+
+#viewport, #panel{
+    position:relative;
+   /* animation: fadein 2s; */
+   /* -moz-animation: fadein 2s; /* Firefox */
+   /* -webkit-animation: fadein 2s; /* Safari and Chrome */
+    /*-o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+        top:100px;
+    }
+    to {
+        opacity:1;
+        top:0;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+        top:100px;
+    }
+    to {
+        opacity:1;
+        top:0;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+        top:100px;
+    }
+    to {
+        opacity:1;
+        top:0;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+        top:100px;
+    }
+    to {
+        opacity:1;
+        top:0;
+    }

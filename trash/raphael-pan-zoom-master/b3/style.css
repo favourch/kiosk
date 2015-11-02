@@ -1,0 +1,33 @@
+
+#mapContainer { 
+	background: #f0000; 
+	border: 1px solid #ccc; 
+	height: 560px; 
+	position: relative; 
+	width: 960px; 
+	overflow: hidden; 
+	margin:auto;
+	top:10px;
+}
+#mapContainer #map { 
+	height: 560px; 
+	width: 960px; 
+}
+#mapContainer #mapControls { 
+	position: absolute; 
+	left: 15px; 
+	top: 15px; 
+	width: 29px; 
+}
+#mapContainer #mapControls #up { 
+	background: url(iconUp.png) no-repeat center top; 
+	display: block; 
+	height: 26px; 
+	width: 29px; 
+}
+#mapContainer #mapControls #down { 
+	background: url(iconDown.png) no-repeat center top; 
+	display: block; 
+	height: 27px; 
+	width: 29px; 
+}

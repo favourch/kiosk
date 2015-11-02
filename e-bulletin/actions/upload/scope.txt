@@ -1,0 +1,15 @@
+Good day po,
+Ung scope nung sa BUCS Kiosk
+A. Various Process like:
+1. Enrollment procedure
+2. Conduct of Activities
+3. Signing of Clearance
+4. Attendance to Seminars
+5. others.
+B. Information System
+1. Faculty Profile
+2. Student Information
+3. Schedule of Classes
+4. Announcement and Bulletin Board
+C. Map
+1. BU Main
